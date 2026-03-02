@@ -1,0 +1,20 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
+
+# Required environment variables - set these in Railway dashboard:
+#
+#   CF_API_KEY   = your CurseForge API key (get one free at console.curseforge.com)
+#   RCON_PASSWORD = your RCON password (already defaulted in Dockerfile)
+#
+# After deploying:
+#   1. Go to service Settings > Networking
+#   2. Add TCP Proxy on internal port 25565
+#   3. Railway will give you a host + port (e.g. monorail.proxy.rlwy.net:12345)
+#   4. That host:port is your server address
+#
+# Add a Volume in Railway dashboard mounted at /data to persist your world.

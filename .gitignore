@@ -1,0 +1,21 @@
+# Don't commit large binary files - the container downloads these at startup
+mods/
+libraries/
+*.jar
+*.log
+installer.log
+run.bat
+run.sh
+world/
+world_nether/
+world_the_end/
+logs/
+crash-reports/
+
+# Local server runtime files
+*.lck
+usercache.json
+whitelist.json
+banned-ips.json
+banned-players.json
+ops.json

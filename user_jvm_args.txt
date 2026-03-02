@@ -1,0 +1,15 @@
+# Forge 1.20.1 JVM arguments for ATM9 Sky server
+# Adjust -Xms and -Xmx to match your available RAM (minimum 8GB recommended)
+-Xms4G
+-Xmx10G
+-XX:+UseG1GC
+-XX:+UnlockExperimentalVMOptions
+-XX:MaxGCPauseMillis=100
+-XX:+DisableExplicitGC
+-XX:TargetSurvivorRatio=90
+-XX:G1NewSizePercent=30
+-XX:G1MaxNewSizePercent=40
+-XX:G1MixedGCLiveThresholdPercent=35
+-XX:+AlwaysPreTouch
+-XX:+ParallelRefProcEnabled
+-Dfile.encoding=UTF-8
